@@ -53,7 +53,6 @@ function App() {
           <ToastContainer position='top-left' autoClose={3000}></ToastContainer>
           <dialog className={`${showDialog ? 'flex' : 'hidden'} gap-6 bg-white p-5 flex-col`} ref={dialogRef} onClose={() => setShowDialog(false)}>
             <div className='flex gap-8'>
-              
               <h3 className='text-retink-grey text-xl font-semibold'>{auth.currentUser ? 'You are Logged in. Enjpy our services' : "Sign In To Use Our Services"}</h3>
               <button onClick={() => setShowDialog(false)}><AiOutlineCloseCircle size={24} /></button>
             </div>

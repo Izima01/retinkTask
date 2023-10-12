@@ -24,7 +24,9 @@ const Sidebar = () => {
     return (
         <aside className="py-5 px-3 bg-[#F1EDFD] flex flex-col justify-between h-full items-center">
             <div className='flex flex-col gap-8 items-center'>
-                <img src={logo} className='w-9' alt="" />
+                <a href="/">
+                    <img src={logo} className='w-9' alt="" />
+                </a>
                 <button className='hover:bg-[#EAE4FC] focus:bg-[#5e3eba] px-3 py-4 rounded-[10px]'>
                     <GoHomeFill size={20} />
                 </button>

@@ -27,6 +27,25 @@ article {
     scrollbar-color: #5e3eba !important;
 }
 
+.grower {
+    animation: grow 3s infinite;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    } 40% {
+        transform: scale(1.15);
+        margin-left: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        padding-block: 4px;
+    } 100% {
+        transform: scale(1);
+    }
+    
+}
+
 @media screen and (min-width: 640px)  {
     .toolsCard {
         flex: 0 0 300px;
