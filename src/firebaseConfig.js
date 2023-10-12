@@ -1,10 +1,11 @@
 /* eslint-disable no-undef */
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
-// import 'dotenv/config';
+import 'dotenv/config';
+const key = import.meta.env.VITE_FIREBASE_KEY;
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_KEY,
+  apiKey: key,
   authDomain: "retinkproject.firebaseapp.com",
   projectId: "retinkproject",
   storageBucket: "retinkproject.appspot.com",
