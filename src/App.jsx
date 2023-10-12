@@ -3,7 +3,7 @@ import './App.css';
 import Hero from './Components/Hero';
 import PopularTools from './Components/PopularTools';
 import Sidebar from './Components/Sidebar';
-import HeaderDesktop from './Components/Headerdesktop';
+import HeaderDesktop from './Components/HeaderDesktop';
 import { FcGoogle } from 'react-icons/fc';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
