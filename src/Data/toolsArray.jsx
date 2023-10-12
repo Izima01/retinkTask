@@ -1,6 +1,6 @@
 import { HiOutlinePencil } from "react-icons/hi";
 import { FaRegPenToSquare } from "react-icons/fa6";
-import bullet from './assets/Bullet.svg';
+import bullet from '../assets/Bullet.svg';
 
 const toolsArray = [
     {

@@ -7,8 +7,8 @@ import { AiOutlineSearch } from 'react-icons/ai';
 const Hero = ({ setShowNav, setShowDialog }) => {
   return (
     <section className="w-full h-64 relative">
-        <img src={bg} className="absolute top left-0 right-0 w-full -z-10 rounded-3xl lg:rounded-2xl h-64 lg:hidden" />
-        <img src={bgBig} className="absolute top left-0 right-0 w-full -z-10 rounded-3xl lg:rounded-2xl hidden lg:block h-64" />
+        <img src={bg} className="absolute top left-0 right-0 w-full -z-10 rounded-3xl lg:rounded-2xl h-64 md:hidden" />
+        <img src={bgBig} className="absolute top left-0 right-0 w-full -z-10 rounded-3xl lg:rounded-2xl hidden md:block h-64" />
         <HeaderMobile setShowNav={setShowNav} />
         <div className="w-11/12 mx-auto lg:ml-7 lg:mr-12">
           <h1 className="text-3xl lg:text-5xl text-retink-grey font-semibold pt-8">Hey James!</h1>

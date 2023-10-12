@@ -21,7 +21,7 @@ const PopularTools = () => {
             <h3 className="text-retink-grey mb-3.5 font-semibold">Social media</h3>
             <div className="flex gap-3 w-full overflow-x-scroll tools py-1">
                 {
-                    toolsArray.map(({description, icon, title}, i) => <ToolBox key={i} title={title} description={description} icon={icon} /> )
+                    toolsArray.reverse().map(({description, icon, title}, i) => <ToolBox key={i} title={title} description={description} icon={icon} /> )
                 }
             </div>
         </section>

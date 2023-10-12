@@ -1,5 +1,6 @@
 import { AiFillAppstore } from 'react-icons/ai';
 import avatar from '../assets/avatar.png';
+import { auth } from '../firebaseConfig';
 
 // eslint-disable-next-line react/prop-types
 const HeaderMobile = ({ setShowNav }) => {
@@ -9,9 +10,10 @@ const HeaderMobile = ({ setShowNav }) => {
           <AiFillAppstore size={28} />
         </button>
         <select name="" id="" className='px-4 py-2 round text-sm font-medium rounded-lg bg-white'>
-          <option value="zara">Zara ventures</option>
+          <option value="zara">{auth.currentUser?.displayName || "Zara Ventures"}</option>
         </select>
-        <img src={avatar} className='rounded-xl' alt="" />
+
+        <img src={auth.currentUser?.photoURL || avatar} className='rounded-xl w-12' alt="" />
     </header>
   )
 }
