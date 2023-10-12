@@ -1,0 +1,37 @@
+.toolsCard {
+    flex: 0 0 160px;
+}
+
+article {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+}
+
+.tools::-webkit-scrollbar-track, .tools::scrollbar-track {
+    background-color: #5e3eba;
+    height: 5px;
+    border: 2px solid #754DE8;
+}
+
+.tools::-webkit-scrollbar, .tools::scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.tools::-webkit-scrollbar-thumb, .tools::scrollbar-thumb {
+    background-color: #5e3eba;
+    border-radius: 16px;
+}
+
+.tools {
+    scrollbar-width: thin;
+    scrollbar-color: #5e3eba !important;
+}
+
+@media screen and (min-width: 640px)  {
+    .toolsCard {
+        flex: 0 0 300px;
+    }
+    article {
+        box-shadow: none;
+    }
+}
